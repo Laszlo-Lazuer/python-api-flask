@@ -1,0 +1,9 @@
+version: '3'
+services:
+  web:
+    # Could be API
+    build: . # References Dockerfile
+    ports:
+      - "5000:5000"
+    volumes:
+      - .:/app # Copy and keep the current direcory in sync with the app directory
